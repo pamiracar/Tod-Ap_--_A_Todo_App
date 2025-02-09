@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listeFragment">
+
+    <fragment
+        android:id="@+id/listeFragment"
+        android:name="com.pamiracar.todap.view.listeFragment"
+        android:label="fragment_liste"
+        tools:layout="@layout/fragment_liste" >
+        <action
+            android:id="@+id/action_listeFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+        <action
+            android:id="@+id/action_listeFragment_to_silFragment"
+            app:destination="@id/silFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.pamiracar.todap.view.todoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_todoFragment_to_listeFragment"
+            app:destination="@id/listeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/silFragment"
+        android:name="com.pamiracar.todap.view.SilFragment"
+        android:label="fragment_sil"
+        tools:layout="@layout/fragment_sil" >
+        <action
+            android:id="@+id/action_silFragment_to_listeFragment"
+            app:destination="@id/listeFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

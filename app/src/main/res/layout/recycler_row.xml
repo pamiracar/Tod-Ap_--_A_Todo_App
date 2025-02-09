@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/edittext">
+
+    <TextView
+        android:id="@+id/RecyclerRowTodoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="todo name"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/RecyclerRowTodoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="todo text"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+
+</LinearLayout>
